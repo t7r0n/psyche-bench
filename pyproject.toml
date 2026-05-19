@@ -1,0 +1,30 @@
+[project]
+name = "psyche-bench"
+version = "0.1.0"
+description = "The clinical ML evaluation harness Mindset needs before any \"foundation model of psychophysiology\" can ship safely across Nerva, Evia, Clari"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    { name = "Tarun Aditya Kusupati" }
+]
+dependencies = []
+
+[project.scripts]
+psyche-bench = "psyche_bench.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.0",
+    "ruff>=0.15.0",
+]
+
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"

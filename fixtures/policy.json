@@ -1,0 +1,18 @@
+{
+  "company": "Mindset Health",
+  "repo": "psyche-bench",
+  "metrics": [
+    "mindset_coverage",
+    "pitch_risk",
+    "evolution_precision",
+    "hypnotherapy_latency"
+  ],
+  "failure_modes": [
+    "mindset_drift",
+    "pitch_gap",
+    "evolution_misroute",
+    "hypnotherapy_blindspot"
+  ],
+  "minimum_cases": 144,
+  "requires_evidence_markers": true
+}

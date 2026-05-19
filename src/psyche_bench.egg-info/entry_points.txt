@@ -1,0 +1,2 @@
+[console_scripts]
+psyche-bench = psyche_bench.cli:main

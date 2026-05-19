@@ -1,0 +1,54 @@
+{
+  "company": "Mindset Health",
+  "company_slug": "mindset-health",
+  "repo": "psyche-bench",
+  "package": "psyche_bench",
+  "cli": "psyche-bench",
+  "title": "Psyche Bench",
+  "problem": "Mindset's pitch evolution - \"hypnotherapy apps\" -> \"foundation model of psychophysiology\" - has out run its public engineering. The clinically published Nerva RCT (PMC11179457) reports adherence and persistence as the primary moderator of outcome, not session content. Yet a user opening Nerva today gets the same 42 day program regardless of whether they are a 28 year old IBS D patient who skips session 7 because of nausea, a 55 year old IBS C patient with high anxiety baseline, or a relapser on attempt 3.",
+  "direction": "The clinical ML evaluation harness Mindset needs before any \"foundation model of psychophysiology\" can ship safely across Nerva, Evia, Claria, Relio and Finito - a versioned offline eval framework plus a per session telemetry schema that produces IBS SSS equivalent outcome predictions from the first 7 days of app behavior.",
+  "why": "The judgment was to pick the eval substrate before the model. Mindset's investor story implies \"we are training a foundation model\"; the engineering reality is that nobody can train one without first building exactly this harness. I picked the unsexy piece that makes everything else possible.",
+  "terms": [
+    "mindset",
+    "pitch",
+    "evolution",
+    "hypnotherapy",
+    "foundation",
+    "model",
+    "psychophysiology",
+    "public",
+    "engineering",
+    "clinically",
+    "published",
+    "nerva",
+    "reports",
+    "adherence",
+    "persistence",
+    "primary",
+    "moderator",
+    "outcome"
+  ],
+  "metrics": [
+    "mindset_coverage",
+    "pitch_risk",
+    "evolution_precision",
+    "hypnotherapy_latency"
+  ],
+  "failure_modes": [
+    "mindset_drift",
+    "pitch_gap",
+    "evolution_misroute",
+    "hypnotherapy_blindspot"
+  ],
+  "sources": [
+    "https://mindsethealthlabs.com/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11179457/",
+    "https://www.monash.edu/medicine/news/latest/2024-articles/hypnotherapy-reduces-irritable-bowel-syndrome-symptoms-and-now-theres-an-app-for-that",
+    "https://onlinelibrary.wiley.com/doi/10.1111/nmo.14533",
+    "https://www.mindsethealth.com/mindset-health-series-a-afr",
+    "https://balancethegrind.co/interviews/alex-naoumidis-co-founder-co-ceo-at-mindset-health/",
+    "https://www.prnewswire.com/news-releases/mindset-health-raises-us12m-to-expand-digital-hypnotherapy-apps--scale-distribution-301776991.html",
+    "https://www.ycombinator.com/companies/mindset-health"
+  ],
+  "github_url": "https://github.com/t7r0n/psyche-bench"
+}
