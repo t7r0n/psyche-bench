@@ -1,6 +1,6 @@
 # Operator Brief: Mindset Health
 
-Mindset Health gets a local, deterministic pressure test around mindset, pitch, and evolution. The useful part is not the dashboard; it is the repeatable evidence path from fixture to failure to operator action.
+Mindset Health gets a local, deterministic pressure test around mindset, pitch, and evolution. The useful part is the repeatable evidence path from fixture to failure to operator action.
 
 ## Highest-leverage checks
 
