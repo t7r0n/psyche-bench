@@ -1,5 +1,5 @@
 {
-  "company": "Mindset Health",
+  "company": "Psyche Bench",
   "repo": "psyche-bench",
   "cases": 144,
   "status_counts": {
@@ -9,54 +9,54 @@
   },
   "clusters": [
     {
-      "scenario": "evolution regression harness",
+      "scenario": "claim regression harness",
       "cases": 36,
       "blocks": 3,
       "reviews": 5,
       "mean_severity": 2.528,
-      "mean_score": 0.4078,
+      "mean_score": 0.3974,
       "top_evidence_id": "ev_0066",
       "recommended_action": "open a regression issue with trace and benchmark delta"
     },
     {
-      "scenario": "hypnotherapy operator packet",
-      "cases": 36,
-      "blocks": 4,
-      "reviews": 5,
-      "mean_severity": 2.556,
-      "mean_score": 0.4068,
-      "top_evidence_id": "ev_0011",
-      "recommended_action": "accept only if decision claims cite fixture evidence"
-    },
-    {
-      "scenario": "mindset evidence replay",
+      "scenario": "evidence replay",
       "cases": 36,
       "blocks": 4,
       "reviews": 5,
       "mean_severity": 2.611,
-      "mean_score": 0.4065,
-      "top_evidence_id": "ev_0132",
+      "mean_score": 0.4088,
+      "top_evidence_id": "ev_0044",
       "recommended_action": "block release until cited evidence is regenerated"
     },
     {
-      "scenario": "pitch boundary probe",
+      "scenario": "handoff boundary probe",
       "cases": 36,
       "blocks": 3,
       "reviews": 4,
       "mean_severity": 2.528,
-      "mean_score": 0.3789,
-      "top_evidence_id": "ev_0121",
+      "mean_score": 0.3913,
+      "top_evidence_id": "ev_0077",
       "recommended_action": "route to reviewer with evidence packet"
+    },
+    {
+      "scenario": "review operator packet",
+      "cases": 36,
+      "blocks": 4,
+      "reviews": 5,
+      "mean_severity": 2.556,
+      "mean_score": 0.4054,
+      "top_evidence_id": "ev_0099",
+      "recommended_action": "accept only if decision claims cite fixture evidence"
     }
   ],
   "highest_risk": {
-    "scenario": "mindset evidence replay",
+    "scenario": "evidence replay",
     "cases": 36,
     "blocks": 4,
     "reviews": 5,
     "mean_severity": 2.611,
-    "mean_score": 0.4065,
-    "top_evidence_id": "ev_0132",
+    "mean_score": 0.4088,
+    "top_evidence_id": "ev_0044",
     "recommended_action": "block release until cited evidence is regenerated"
   }
 }

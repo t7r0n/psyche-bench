@@ -6,15 +6,15 @@ from pathlib import Path
 from typing import Any
 
 
-COMPANY = 'Mindset Health'
+COMPANY = 'Psyche Bench'
 REPO = 'psyche-bench'
-PROJECT_TERMS = ['mindset', 'pitch', 'evolution', 'hypnotherapy', 'foundation', 'model', 'psychophysiology', 'engineering']
-PROJECT_METRICS = ['mindset_coverage', 'pitch_risk', 'evolution_precision', 'hypnotherapy_latency']
-PROJECT_FAILURES = ['mindset_drift', 'pitch_gap', 'evolution_misroute', 'hypnotherapy_blindspot']
-PROJECT_ARCHETYPES = [{'name': 'mindset evidence replay', 'trigger': 'mindset signal changes while pitch context is stale', 'expected': 'block release until cited evidence is regenerated'}, {'name': 'pitch boundary probe', 'trigger': 'pitch handoff crosses a policy or trust boundary', 'expected': 'route to reviewer with evidence packet'}, {'name': 'evolution regression harness', 'trigger': 'evolution behavior regresses against the last accepted fixture', 'expected': 'open a regression issue with trace and benchmark delta'}, {'name': 'hypnotherapy operator packet', 'trigger': 'hypnotherapy output needs a human-readable audit packet', 'expected': 'accept only if decision claims cite fixture evidence'}]
-PROJECT_DIRECTION = 'The clinical ML evaluation harness Mindset needs before any "foundation model of psychophysiology" can ship safely across Nerva, Evia, Claria, Relio and Finito — a versioned offline eval framework plus a per session telemetry schema that produces IBS SSS equivalent outcome predictions from the first 7 days of app behavior.'
+PROJECT_TERMS = ['evidence', 'workflow', 'review', 'claims', 'fixtures', 'replay', 'handoff', 'trace', 'policy', 'decision', 'coverage', 'latency']
+PROJECT_METRICS = ['evidence_coverage', 'handoff_risk', 'claim_precision', 'review_latency']
+PROJECT_FAILURES = ['evidence_drift', 'handoff_gap', 'claim_misroute', 'review_blindspot']
+PROJECT_ARCHETYPES = [{'name': 'evidence replay', 'trigger': 'source evidence changes while workflow context is stale', 'expected': 'block release until cited evidence is regenerated'}, {'name': 'handoff boundary probe', 'trigger': 'handoff crosses a policy or trust boundary', 'expected': 'route to reviewer with evidence packet'}, {'name': 'claim regression harness', 'trigger': 'claim behavior regresses against the last accepted fixture', 'expected': 'open a regression issue with trace and benchmark delta'}, {'name': 'review operator packet', 'trigger': 'review output needs a human-readable audit packet', 'expected': 'accept only if decision claims cite fixture evidence'}]
+PROJECT_DIRECTION = 'The clinical ML evaluation harness Mindset needs before any "foundation model of psychophysiology" can ship safely across Nerva, Evia, Claria, Relio and Finito - a versioned offline eval framework plus a per session telemetry schema that produces IBS SSS equivalent outcome predictions from the first 7 days of app behavior.'
 VISUAL_THEME = {'name': 'clinical ops', 'bg': '#f7faf9', 'ink': '#10201c', 'muted': '#475569', 'border': '#d7e2df', 'a': '#0f766e', 'b': '#4f46e5', 'c': '#b45309', 'd': '#2563eb', 'soft_a': '#ecfdf5', 'soft_b': '#eef2ff', 'soft_c': '#fffbeb', 'soft_d': '#f0f9ff', 'hero': 'Evidence Triage Board', 'left': 'operational gates under review', 'right': 'review packets with citations', 'chain': 'evidence-to-decision chain', 'lane': 'case lane', 'gate': 'failure gate', 'action': 'clinical action'}
-HERO_TITLE = 'Mindset Health Evidence Triage Board'
+HERO_TITLE = 'Psyche Bench'
 
 
 def _short(value: str, limit: int = 44) -> str:
@@ -107,7 +107,7 @@ def build_signal_model(rows: list[dict[str, Any]], clusters: list[dict[str, Any]
         "review_share": round(review / total, 4),
         "top_leverage_points": leverage,
         "readout": (
-            f"{COMPANY} gets a local, deterministic pressure test around "
+            "This local harness runs a deterministic pressure test around "
             f"{PROJECT_TERMS[0]}, {PROJECT_TERMS[1]}, and {PROJECT_TERMS[2]}. "
             "The useful part is the repeatable evidence path from fixture "
             "to failure to operator action."

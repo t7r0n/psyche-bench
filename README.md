@@ -53,17 +53,6 @@ uv run ruff check .
 - `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
 
-## Sources
-
-- https://mindsethealthlabs.com/
-- https://pmc.ncbi.nlm.nih.gov/articles/PMC11179457/
-- https://www.monash.edu/medicine/news/latest/2024-articles/hypnotherapy-reduces-irritable-bowel-syndrome-symptoms-and-now-theres-an-app-for-that
-- https://onlinelibrary.wiley.com/doi/10.1111/nmo.14533
-- https://www.mindsethealth.com/mindset-health-series-a-afr
-- https://balancethegrind.co/interviews/alex-naoumidis-co-founder-co-ceo-at-mindset-health/
-- https://www.prnewswire.com/news-releases/mindset-health-raises-us12m-to-expand-digital-hypnotherapy-apps--scale-distribution-301776991.html
-- https://www.ycombinator.com/companies/mindset-health
-
 ## Boundary
 
 Everything runs locally against synthetic fixtures. There are no credentials, no customer records, no outreach files, and no hosted API dependency.

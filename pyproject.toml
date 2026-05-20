@@ -1,7 +1,7 @@
 [project]
 name = "psyche-bench"
 version = "0.1.0"
-description = "The clinical ML evaluation harness Mindset needs before any \"foundation model of psychophysiology\" can ship safely across Nerva, Evia, Clari"
+description = "The clinical ML evaluation harness Mindset needs before any 'foundation model of psychophysiology' can ship safely acros"
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [
