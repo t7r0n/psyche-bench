@@ -1,0 +1,66 @@
+{
+  "repo": "psyche-bench",
+  "company": "Mindset Health",
+  "rubric_axes": [
+    {
+      "axis": "mindset_coverage",
+      "failures": [
+        "mindset_drift"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "pitch_risk",
+      "failures": [
+        "pitch_gap"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "evolution_precision",
+      "failures": [
+        "evolution_misroute"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "hypnotherapy_latency",
+      "failures": [
+        "hypnotherapy_blindspot"
+      ],
+      "evidence_required": true
+    }
+  ],
+  "archetypes": [
+    {
+      "name": "mindset evidence replay",
+      "trigger": "mindset signal changes while pitch context is stale",
+      "expected": "block release until cited evidence is regenerated"
+    },
+    {
+      "name": "pitch boundary probe",
+      "trigger": "pitch handoff crosses a policy or trust boundary",
+      "expected": "route to reviewer with evidence packet"
+    },
+    {
+      "name": "evolution regression harness",
+      "trigger": "evolution behavior regresses against the last accepted fixture",
+      "expected": "open a regression issue with trace and benchmark delta"
+    },
+    {
+      "name": "hypnotherapy operator packet",
+      "trigger": "hypnotherapy output needs a human-readable audit packet",
+      "expected": "accept only if decision claims cite fixture evidence"
+    }
+  ],
+  "sources_used": [
+    "https://mindsethealthlabs.com/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11179457/",
+    "https://www.monash.edu/medicine/news/latest/2024-articles/hypnotherapy-reduces-irritable-bowel-syndrome-symptoms-and-now-theres-an-app-for-that",
+    "https://onlinelibrary.wiley.com/doi/10.1111/nmo.14533",
+    "https://www.mindsethealth.com/mindset-health-series-a-afr",
+    "https://balancethegrind.co/interviews/alex-naoumidis-co-founder-co-ceo-at-mindset-health/",
+    "https://www.prnewswire.com/news-releases/mindset-health-raises-us12m-to-expand-digital-hypnotherapy-apps--scale-distribution-301776991.html",
+    "https://www.ycombinator.com/companies/mindset-health"
+  ]
+}
