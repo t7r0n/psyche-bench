@@ -2,19 +2,39 @@
 
 The clinical ML evaluation harness Mindset needs before any "foundation model of psychophysiology" can ship safely across Nerva, Evia, Claria, Relio and Finito - a versioned offline eval framework plus a per session telemetry schema that produces IBS SSS equivalent outcome predictions from the first 7 days of app behavior.
 
-## Why This Exists
+![Psyche Bench working dashboard](outputs/project_working.svg)
 
-Mindset's pitch evolution - "hypnotherapy apps" -> "foundation model of psychophysiology" - has out run its public engineering. The clinically published Nerva RCT (PMC11179457) reports adherence and persistence as the primary moderator of outcome, not session content. Yet a user opening Nerva today gets the same 42 day program regardless of whether they are a 28 year old IBS D patient who skips session 7 because of nausea, a 55 year old IBS C patient with high anxiety baseline, or a relapser on attempt 3.
+## Why it exists
 
-## What It Builds
+Mindset's pitch evolution - "hypnotherapy apps" -> "foundation model of psychophysiology" - has out run its public engineering.
 
-- Replays synthetic `mindset` and `pitch` cases against the project's evidence rules.
-- Scores `mindset_coverage`, `pitch_risk`, and `evolution_precision` so regressions are visible in CSV and JSON.
-- Plants `mindset drift` and `pitch gap` failures as negative controls.
-- Writes citation-locked decision claims; unsupported claims fail verification.
-- Exports a review dashboard and demo pack for `psyche-bench` without hosted services.
+Most internal demos stop at a pretty chart. This repository is built around the harder part: a repeatable path from fixture, to failure, to evidence, to the operator action a serious team would actually trust.
 
-## Local Run
+## What is inside
+
+- A deterministic replay harness tuned around mindset, pitch, and evolution.
+- Company-specific strategy code in `src/psyche_bench/strategy.py`, not just README-level customization.
+- Citation-locked reports where every decision claim has to point back to a generated evidence ID.
+- Two visual artifacts generated from the latest run: `outputs/project_working.svg` and `outputs/evidence_map.svg`.
+- A portable demo pack with JSON, CSV, Markdown, HTML, SVG, and benchmark artifacts.
+
+![Psyche Bench evidence map](outputs/evidence_map.svg)
+
+## Signals it measures
+
+- `mindset coverage`
+- `pitch risk`
+- `evolution precision`
+- `hypnotherapy latency`
+
+## Failure modes it plants
+
+- mindset drift
+- pitch gap
+- evolution misroute
+- hypnotherapy blindspot
+
+## Run it locally
 
 ```bash
 uv sync
@@ -23,16 +43,14 @@ uv run pytest -q
 uv run ruff check .
 ```
 
-## Outputs
+## Outputs worth opening
 
-- `outputs/analysis.json`
-- `outputs/scenario_report.csv`
-- `outputs/decision_report.md`
-- `outputs/evidence_packet.md`
-- `outputs/domain_rubric.json`
-- `outputs/failure_matrix.md`
-- `outputs/trace_graph.mmd`
 - `outputs/dashboard.html`
+- `outputs/project_working.svg`
+- `outputs/evidence_map.svg`
+- `outputs/operator_brief.md`
+- `outputs/decision_report.md`
+- `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
 
 ## Sources
@@ -48,4 +66,4 @@ uv run ruff check .
 
 ## Boundary
 
-This repository uses synthetic fixtures only. It has no credentials, no customer data, no outreach data, and no dependency on a hosted API.
+Everything runs locally against synthetic fixtures. There are no credentials, no customer records, no outreach files, and no hosted API dependency.
